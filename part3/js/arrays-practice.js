@@ -117,6 +117,6 @@ movies[5] = "Battleship";
 movies[6] = "Avtaar";
 var leastFavMovies = movies.splice(1,2);
 movies = movies.concat(leastFavMovies);
-movies.sort();
-window.console.log(movies.slice(0)[0]);
+movies.sort().reverse();
+window.console.log(movies.slice(-1));
 
